@@ -1,0 +1,29 @@
+{
+  "name": "multi-llm-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jasmine",
+    "test:acceptance": "cucumber-js",
+    "test:all": "npm test && npm run test:acceptance"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "openai": "^6.34.0",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.1",
+    "jasmine": "^6.2.0",
+    "puppeteer": "^24.42.0",
+    "supertest": "^7.2.2"
+  }
+}

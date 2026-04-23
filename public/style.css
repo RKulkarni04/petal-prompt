@@ -1,0 +1,117 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom right, #ffe4ec, #ffd6e7, #fff0f5);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #7a4e5d;
+  }
+  
+  .container {
+    max-width: 850px;
+    margin: 50px auto;
+    background: rgba(255, 250, 252, 0.95);
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(214, 140, 170, 0.25);
+    border: 2px solid #f8c8dc;
+  }
+  
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.2rem;
+    text-align: center;
+    color: #d66b9a;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #9a6b7d;
+    margin-bottom: 25px;
+  }
+  
+  h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: #c15f87;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 140px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    padding: 16px;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    border: 2px solid #f4b6cc;
+    border-radius: 18px;
+    background-color: #fff7fa;
+    color: #7a4e5d;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: #e98ab1;
+    box-shadow: 0 0 8px rgba(233, 138, 177, 0.3);
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(to right, #f8a5c2, #f7c5d8);
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 26px;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(214, 107, 154, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(214, 107, 154, 0.35);
+  }
+  
+  #statusMessage {
+    text-align: center;
+    margin-top: 18px;
+    color: #b25d7c;
+    font-weight: 600;
+  }
+  
+  .card {
+    background: #fff7fa;
+    border: 2px solid #f8c8dc;
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 18px;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(240, 180, 205, 0.18);
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #c15f87;
+    font-weight: 700;
+    background: #ffe4ee;
+    padding: 10px 18px;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+  }
+  
+  .back-link:hover {
+    background: #ffd3e3;
+  }

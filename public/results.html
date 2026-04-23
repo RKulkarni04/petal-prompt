@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petal Prompt Results</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Petal Prompt</h1>
+    <p class="subtitle">Here are your AI answers 💕</p>
+
+    <h3>Your Question</h3>
+    <div class="card" id="questionCard"></div>
+
+    <h3>GPT (Cloud Model)</h3>
+    <div class="card" id="gptCard"></div>
+
+    <h3>Ollama (Local Model)</h3>
+    <div class="card" id="ollamaCard"></div>
+
+    <a class="back-link" href="/">Ask Another Question</a>
+  </div>
+
+  <script>
+    const resultData = JSON.parse(localStorage.getItem("llmResults"));
+
+    if (resultData) {
+      document.getElementById("questionCard").textContent = resultData.question;
+      document.getElementById("gptCard").textContent = resultData.gpt;
+      document.getElementById("ollamaCard").textContent = resultData.ollama;
+    } else {
+      document.getElementById("questionCard").textContent = "No question found.";
+      document.getElementById("gptCard").textContent = "No GPT response found.";
+      document.getElementById("ollamaCard").textContent = "No Ollama response found.";
+    }
+  </script>
+</body>
+</html>
